@@ -1,112 +1,169 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Our Love Story</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<style type="text/css">
-		@font-face {
-			font-family: digit;
-			src: url('digital.ttf') format("truetype");
-		}
-	</style>
-	<link href="css/default.css" type="text/css" rel="stylesheet">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/garden.js"></script>
-	<script type="text/javascript" src="js/functions.js"></script>
-</head>
+  <meta>
+    <title>Our Love Story</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <style type="text/css">
+      @font-face {
+        font-family: digit;
+        src: url("digital.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: CarryYou;
+        src: url("CarryYouRegular-3z71M.ttf") format("truetype");
+      }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </head>
 
-<body>
-<div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">##</span><br/>
-			<span class="comments"># I am a programmer,</span><br/>
-			<span class="comments"># so I write code to celebrate Valentine's Day in coder's way.</span><br/>
-			<span class="comments">##</span><br/>
-			i = Boy(<span class="string">"Qingcai Cui"</span>);<br/>
-			u = Girl(<span class="string">"Qian Ma"</span>);<br/>
-			<span class="comments"># Oct 14, 2018, I meet you because of PyCon 2018. </span><br/>
-			i.meet(u)<br/>
-			<span class="comments"># Afterwards, I confessed to you. </span><br/>
-			i.confess(u)<br/>
-			<span class="comments"># Nov 5, 2018, You became my girlfriend.</span><br/>
-			u.accepted(i)<br/>
-			<span class="comments"># Since then, we spent harmony happiness life every day.</span><br/>
-			happy(u, i)<br/>
-			<span class="comments"># We enjoy studying together.</span><br/>
-			study(u, i)<br/>
-			<span class="comments"># We enjoy cuisine together.</span><br/>
-			dine(u, i)<br/>
-			<span class="comments"># We enjoy appointment together.</span><br/>
-			appoint(u, i)<br/>
-			<span class="comments"># We enjoy vacation together.</span><br/>
-			vacation(u, i)<br/>
-			<span class="comments"># Sometimes there are a few conflicts between us.</span><br/>
-			conflict(u, i, sometimes=<span class="keyword">True</span>)<br/>
-			<span class="comments"># But we are getting more and more in harmony together.</span><br/>
-			u.in_harmony_with(i) <br/>
-			i.in_harmony_with(u) <br/>
-			<span class="comments"># You are the greatest love of my life.</span><br/>
-			while <span class="keyword">True</span>:<br/>
-			<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br/>
-			<span class="placeholder"></span><span class="placeholder"></span>u = everything<br/>
-			<span class="placeholder"></span><span class="keyword">else</span>:<br/>
-			<span class="placeholder"></span><span class="placeholder"></span>everything = u<br/>
-			<span class="comments"># Waiting me marries you, we will be the happiest couple in the world.</span><br/>
-			i.marry(u, in_the_future=<span class="keyword">True</span>)<br/>
-			i.live_happily_forever_with(u)<br/>
-			<span class="comments"># I love you forever.</span><br/>
-		</div>
-		<div id="loveHeart">
-			<canvas id="garden"></canvas>
-			<div id="words">
-				<div id="messages">
-					Qian, I have fallen in love with you for
-					<div id="elapseClock"></div>
-				</div>
-				<div id="loveu">
-					Love u forever and ever.<br/>
-					<div class="signature">- Qingcai Cui | Germey</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <body>
+    <div id="mainDiv">
+      <div id="content">
+        <div id="code">
+          <span class="comments">##</span><br />
+          <span class="comments"
+            ># Là một học sinh Công Nghệ Thông Tin lesor,</span
+          ><br />
+          <span class="comments"
+            ># Vì vậy Khim viết những dòng này để gửi tới em nhân ngày Valentine
+            theo cách của dân lập trình (人◕ω◕)
+          </span>
+          <br />
+          <span class="comments">##</span><br />
+          i = Boy(<span class="string">"Khiêm"</span>);<br />
+          u = Girl(<span class="string">"Thảo"</span>);<br />
+          <span class="comments"
+            ># Lần đầu anh gặp em là buổi học đầu tiên của lớp 10 </span
+          ><br />
+          i.meet(u)<br />
+          <span class="comments"
+            ># Lần đầu thấy em cười là anh đã biết mình thích em mất rồi </span
+          ><br />
+          i.crush(u)<br />
+          <span class="comments"
+            ># Sau khi được cô giáo chuyển ra ngồi gần anh mới có cơ hội để làm
+            quen với em và được đồng ý lời mời kết bạn trên facebook sau 2 tháng
+            (づ・ᗝ・)づ</span
+          ><br />
+          friend(u,i)<br />
+          <span class="comments"
+            ># Sau đó chúng ta đã nói chuyện rất nhiều và nhận ra có rất nhiều
+            điểm chung ha( xong là bây giờ hơi xíu khác quan điểm nhau là lại
+            bảo đấy sự khác biệt đấy (T.T) ).</span
+          ><br />
+		  travel(u, i)<br />
+          <span class="comments"
+		  
+            ># Đi tham quan do nhà trường tổ chức nè và hôm đó Khim làm ảo thuật đểu để sờ má em :"> .</span
+          ><br />
+          talk(u, i)<br />
+          <span class="comments"># Sau đó thì "Minh Thich Cau" ("Toi cũng thích toi :<")</span><br />
+          i.confess(u)<br />
+          <span class="comments">#  7/12/2019, Mình trở thành người yêu toi nè (Ɔ ˘⌣˘)♥(˘⌣˘ C) .</span
+          ><br />
+          u.accepted(i)<br />
+          <span class="comments"
+            ># Sau đó, mỗi ngày đều là một ngày tuyệt với và anh chỉ mong có thể nhìn thấy em nhiều hơn( Hôm nào cũng mong đi học để được nhìn thấy em ).</span
+          ><br />
+          happy(u, i)<br />
+          <span class="comments"># Hôm nào hai đứa cũng call video với nhau để học bài ôn thi đại học nè !! ( Thức đêm để học mà khum thấy mệt lun ^-^).</span><br />
+          study(u, i)<br />
+          <span class="comments"># Anh thi rớt Đại học :( nhưng mà cảm ơn em rất nhiều vì luôn bên cạnh an ủi và động viên anh <3.</span><br />
+		  i.fail()<br />
+          <span class="comments"># Hai đứa cùng đỗ Đại học( Khim đỗ vào đợt 2)  </span><br />
+			passed(u,i)<br/>
+          <span class="comments"># Chúng ta cùng nhau đi nhiều nơi.</span><br />
+          date(u, i)<br />
+          <span class="comments"
+		  
+            ># Hai đứa đi chơi nhiều nơi và đi trải nghiệm ẩm thực Hà Nội ( Quỷ bún bò Khim Tốn).</span
+          ><br />
+          conflict(u, i, sometimes=<span class="keyword">True</span>)<br />
+          <span class="comments"
+            ># Đôi khi hai đứa cũng hay xảy ra cãi nhau :( nhưng mò em biết ai luôn đúng r ó .</span
+          ><br />
+		  Anh chỉ mong mỗi lần như thế hai đứa lại thêm hiểu nhau hơn chứ không phải lại xa cách hơn
+          u.in_harmony_with(i) <br />
+          i.in_harmony_with(u) <br />
+          <span class="comments"># You are the greatest love of my life (✿ ♡‿♡).</span
+          ><br />
+          while <span class="keyword">True</span>:<br />
+          <span class="placeholder"></span
+          ><span class="keyword">if</span> u.with(i):<br />
+          <span class="placeholder"></span><span class="placeholder"></span>u =
+          everything<br />
+          <span class="placeholder"></span
+          ><span class="keyword">else</span>:<br />
+          <span class="placeholder"></span
+          ><span class="placeholder"></span>everything = u<br />
+          <span class="comments"
+            ># Hai đứa cùng cố gắng để đi Sapporo nha !!!.</span
+          ><br />
+          i.live_happily_forever_with(u)<br />
+          <span class="comments"># Mỗi ngày có em đều là một ngày tuyệt vời với anh và anh chỉ mong đó sẽ là mãi mãi.</span><br />
+        </div>
+        <div id="loveHeart">
+          <canvas id="garden"></canvas>
+          <div id="words">
+            <div id="messages">
+              Thời gian chúng ta bên nhau 
+              <div id="elapseClock"></div>
+            </div>
+            <div id="loveu">
+              Love u forever and ever.<br />
+              <div class="signature">- Thảo | Khiêm</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var offsetX = $("#loveHeart").width() / 2;
+      var offsetY = $("#loveHeart").height() / 2 - 55;
+      var together = new Date();
+      // 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
+      together.setFullYear(2019, 11, 6);
+      together.setHours(0);
+      together.setMinutes(3);
+      together.setSeconds(0);
+      together.setMilliseconds(0);
 
-</div>
-<script type="text/javascript">
-	var offsetX = $("#loveHeart").width() / 2;
-	var offsetY = $("#loveHeart").height() / 2 - 55;
-	var together = new Date();
-	// 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
-	together.setFullYear(2019, 11, 6);
-	together.setHours(0);
-	together.setMinutes(3);
-	together.setSeconds(0);
-	together.setMilliseconds(0);
+      if (!document.createElement("canvas").getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML =
+          "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none");
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+      } else {
+        setTimeout(function () {
+          startHeartAnimation();
+        }, 5000);
 
-	if (!document.createElement('canvas').getContext) {
-		var msg = document.createElement("div");
-		msg.id = "errorMsg";
-		msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-		document.body.appendChild(msg);
-		$("#code").css("display", "none")
-		$("#copyright").css("position", "absolute");
-		$("#copyright").css("bottom", "10px");
-		document.execCommand("stop");
-	} else {
-		setTimeout(function () {
-			startHeartAnimation();
-		}, 5000);
+        timeElapse(together);
+        setInterval(function () {
+          timeElapse(together);
+        }, 500);
 
-		timeElapse(together);
-		setInterval(function () {
-			timeElapse(together);
-		}, 500);
-
-		adjustCodePosition();
-		$("#code").typewriter();
-	}
-</script>
-</body>
+        adjustCodePosition();
+        $("#code").typewriter();
+      }
+    </script>
+  </body>
 </html>
