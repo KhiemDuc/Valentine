@@ -1,2 +1,2 @@
-# My Love Story
-Site: http://love.cuiqingcai.com/
+# Gửi đến Thảo
+https://khiemduc.github.io/Valentine/
