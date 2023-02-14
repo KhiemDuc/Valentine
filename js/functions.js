@@ -1,6 +1,10 @@
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
+var audio = document.querySelector('#audio');
+
+
+
 $(function () {
 	$loveHeart = $("#loveHeart");
 	var a = $loveHeart.width() / 2;
@@ -26,6 +30,8 @@ $(window).resize(function () {
 	if (b != clientWidth && a != clientHeight) {
 		location.replace(location)
 	}
+	
+	audio.play();
 });
 
 function getHeartPoint(c) {
@@ -61,6 +67,7 @@ function startHeartAnimation() {
 			d += 0.2
 		}
 	}, c)
+	audio.play();
 }
 
 (function (a) {
